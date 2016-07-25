@@ -1,0 +1,26 @@
+{
+  "name": "idToolPointer",
+  "description": "SVG Tool Pointer for jQuery UI draggable",
+  "main": "idToolPointer.js",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "svg",
+    "pointer",
+    "draggable",
+    "jquery"
+  ],
+  "authors": [
+    "Tatyana Elavsky"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
