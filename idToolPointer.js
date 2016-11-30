@@ -222,7 +222,7 @@ $.fn.drawPointer = function(ui, evt, p, stopped, clicked) {
 
 		svg.attr("width", svgWidth)
 			.attr("height", svgHeight)
-			.attr("style", "top: " + svgTop + "px; left: " + svgLeft + "px; width: " + svgWidth + "px; height: " + svgHeight + "px; z-index: 19;");
+			.attr("style", "top: " + svgTop + "px; left: " + svgLeft + "px; width: " + svgWidth + "px; height: " + svgHeight + "px; z-index: " + p.defaults.zIndex + ";");
 
 		points = (from.x - svgLeft) + "," + (from.y - svgTop) + " " +
 			(x1 - svgLeft) + "," + (y1 - svgTop) + " " +
@@ -232,7 +232,7 @@ $.fn.drawPointer = function(ui, evt, p, stopped, clicked) {
 	} else {
 		svg.attr("width", "100%")
 		.attr("height", "100%")
-		.attr("style", "position:absolute; top: 0; left: 0; z-index: 19;");
+		.attr("style", "position:absolute; top: 0; left: 0; z-index: " + p.defaults.zIndex + ";");
 	}
 
 	/*
